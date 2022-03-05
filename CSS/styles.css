@@ -54,3 +54,29 @@ transition: all 0.3s ease os;
 button: :hover{
     background-color: rgba(0,136,169,0.8);
 }
+body{
+    margin: 0;
+      }
+      .body{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+      }
+      .About{
+          width:100px  
+          display: block;
+          background-color: rgb(226, 43, 134);
+          color:white;
+          text-align: center;
+          font-weight: 400;
+      }
+      .About h1{
+          font-size: 70px;
+          font-weight: 800;
+          cursor: pointer;
+          transition:all 0.3s ease os;
+          text-align: center;
+      }
+      .body{
+          
+      }
