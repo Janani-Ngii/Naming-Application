@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.navigationbar{
+  display: flex;
+  gap: 20%;
+  }
+.list li{
+display: inline-block;
+margin: 20px;
+color: white;
+font-weight: 700;
+gap: 100px;
+}
+#navbarsection .container-fluid{
+  background-color: rgb(226, 43, 134);
+}
+.h1{}
+.cta{
+    
+}
+
+
