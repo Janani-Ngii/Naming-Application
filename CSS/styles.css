@@ -9,19 +9,48 @@
   display: flex;
   gap: 20%;
   }
-.list li{
+.list{
 display: inline-block;
 margin: 20px;
 color: white;
 font-weight: 700;
 gap: 100px;
+font size: 16px;
+text-decoration: none;
 }
 #navbarsection .container-fluid{
   background-color: rgb(226, 43, 134);
 }
-.h1{}
-.cta{
-    
+.header{
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
 }
-
-
+.logo{
+    cursor: pointer;
+}
+.list{
+    list-style:none ;
+}
+.list li,a{
+    display: inline-block;
+    padding: 0px 20px;
+    margin 
+    }
+}
+.list li,a :hover {
+        color: white;
+        cursor: pointer;
+        transition: all 0.3s ease os;
+}
+button{
+    padding 9px 25px
+background-color: rgba(0,136,169,1);
+border:none;
+border:radius 60px;
+cursor:pointer;
+transition: all 0.3s ease os;
+}
+button: :hover{
+    background-color: rgba(0,136,169,0.8);
+}
