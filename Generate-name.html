@@ -29,19 +29,23 @@
             </div>
         </div> 
     </div>
-   <div>
-    <h1>Gender</h1>
-    <form action="/action_page.php">
-      <p>Please select your gender:</p>
-      <input type="radio" name="gender" value="male"> Male<br>
-      <input type="radio" name="gender" value="female"> Female<br>
-        
-    <label for="birthday">Birthday (date and time):</label>
-    <input type="datetime-local" id="birthdayday" name="birthdayday">
-    <br>
-    <br>
-    <input type="button" id="birthdayday" name="Generate" value="Generate">
-    </form>
+   <div class="form">   
+     <h1>Gender</h1>
+        <form action="/action_page.php">
+        <p>Please select your gender:</p>
+        <input type="radio" name="gender" value="male"> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <br>
+        <br>
+        function submitBirthday() {
+            var birthday = document.getElementById("myBirthday").value;
+            document.getElementById("displayBirthday").innerHTML = ("You are " + birthday + " years old.");
+        }
+
+
+
+        <input type="button" id="birthdayday" name="Generate" value="Generate">
+        </form>
    </div>      
 
     
