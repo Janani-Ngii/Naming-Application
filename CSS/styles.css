@@ -74,5 +74,16 @@ button: hover{
           line-height: normal;
           font-size: 40px;
     }
+    .cont{
+        display: block;
+          background-color: rgb(226, 43, 134);
+          color:white;
+          text-align: center;
+          font-weight: 400;
+          font-size: larger;
+          font font-weight: 500;
+              }
+           
+        
     
      
