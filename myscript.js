@@ -54,6 +54,14 @@ function getName() {
       default:
         alert("Invalid day");
     }
-  } 
+  } else alert("Input a proper gender");
+  console.log(new Date(date).getDay());
+  console.log("Gender: ", gender);
+  console.log("Name: ", nname);
+  document.getElementById("t_gender").innerHTML = gender;
+  document.getElementById("t_date").innerHTML = date;
+  document.getElementById("t_day").innerHTML = new Date(date).getDay();
+  document.getElementById("t_name").innerHTML = nname;
+}
 
 document.getElementById("birthdayday").onclick = getName;
