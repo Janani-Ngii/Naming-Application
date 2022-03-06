@@ -1,55 +1,59 @@
-function getName(){
-    var name = ""
-    var gender = ""
-    if (gender == "male"){
-    switch (new Date().getDay()) {
-        case "Sunday":
-          name = "Kwasi";
-          break;
-        case MOnday:
-          name = "Kwadwo";
-          break;
-        case Tuesday:
-           name = "Kwabena";
-          break;
-        case Wednesday:
-          name = "Kwaku";
-          break;
-        case Thursday:
-          name = "Yaw";
-          break;
-        case Friday:
-          name = "Kofi";
-          break;
-        case Saturday:
-          name = "Kwame";
-      }
+function getName() {
+  let nname = "";
+  let gender = document.getElementById("gender").value;
+  let date = document.getElementById("date").value;
+  if (gender == "male") {
+    switch (new Date(date).getDay()) {
+      case 0:
+        nname = "Kwasi";
+        break;
+      case 1:
+        nname = "Kwadwo";
+        break;
+      case 2:
+        nname = "Kwabena";
+        break;
+      case 3:
+        nname = "Kwaku";
+        break;
+      case 4:
+        nname = "Yaw";
+        break;
+      case 5:
+        nname = "Kofi";
+        break;
+      case 6:
+        nname = "Kwame";
+        break;
+      default:
+        alert("Invalid day");
     }
-
-    else if(gender ==  "female"){
-        switch (new Date().getDay()) {
-            case "Sunday":
-              name = "Akosua";
-              break;
-            case "Monday":
-              name = "Adwoa";
-              break;
-            case "Tuesday":
-                name = "Abenaa";
-              break;
-            case "Wednesday":
-                name = "Akua";
-              break;
-            case "Thursday":
-                name = "Yaa";
-              break;
-            case "Friday":
-                name = "Afua";
-              break;
-            case "Saturday":
-              name = "Ama";
-          }
-
+  } else if (gender == "female") {
+    switch (new Date(date).getDay()) {
+      case 0:
+        nname = "Akosua";
+        break;
+      case 1:
+        nname = "Adwoa";
+        break;
+      case 2:
+        nname = "Abenaa";
+        break;
+      case 3:
+        nname = "Akua";
+        break;
+      case 4:
+        nname = "Yaa";
+        break;
+      case 5:
+        nname = "Afua";
+        break;
+      case 6:
+        nname = "Ama";
+        break;
+      default:
+        alert("Invalid day");
     }
-    else (alert("Input a proper gender"))
-}
+  } 
+
+document.getElementById("birthdayday").onclick = getName;
